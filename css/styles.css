@@ -1,0 +1,2905 @@
+/*----глобальные стили----*/
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    html{
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body{
+      font-family: 'Open Sans', sans-serif;
+      background: #ffffff;
+      min-height: 100%;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    ul,li {
+      margin: 0px;
+      padding: 0px;
+      
+    }
+
+    h1,h2,h3,h4,p{
+      margin: 0px;
+      font-weight: normal;
+    }
+
+    .wrapper{
+      font-family: 'Open Sans', sans-serif;
+      background: #FFFFFF;
+      min-height: 100%;
+      display: grid !important;
+      grid-template-rows: auto 1fr auto;
+      position: relative;
+    }
+
+    .upper{
+      text-transform: uppercase;
+    }
+
+/*----шрифты----*/
+
+@font-face {
+  font-family: "Montserrat-800";
+  src: 
+    url("Montserrat-ExtraBold.woff2") format("woff2"),
+    url("Montserrat-ExtraBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-700";
+  src: 
+    url("Montserrat-Bold.woff2") format("woff2"),
+    url("Montserrat-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-600";
+  src: 
+  url("Montserrat-SemiBold.woff2") format("woff2"),
+    url("Montserrat-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-500";
+  src: 
+    url("Montserrat-Medium.woff2") format("woff2"),
+    url("Montserrat-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-400";
+  src: 
+   url("Montserrat-Regular.woff2") format("woff2"),
+    url("Montserrat-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-300";
+  src: 
+    url("Montserrat-Light.woff2") format("woff2"),
+    url("Montserrat-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: "RenaultLife-700";
+  src: 
+    url("RenaultLife-Bold.woff2") format("woff2"),
+    url("RenaultLife-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "RenaultLife-400";
+  src: 
+   url("RenaultLife.woff2") format("woff2"),
+    url("RenaultLife.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "RenaultLife-300";
+  src: 
+    url("RenaultLife-Light.woff2") format("woff2"),
+    url("RenaultLife-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+
+
+@keyframes aniop {
+   0% { opacity: 0; }
+  100% { opacity: 1;  }
+}
+
+@keyframes ani {
+   0% { color: #333333; }
+   20% { color: #55383f; }
+   40% { color: #743c4a; }
+   60% { color: #964156; }
+   80% { color: #b84661; }
+  100% { color: #d54a6b; }
+}
+
+@keyframes anifade {
+   0% { opacity: 0; }
+   20% { opacity: 0.2; }
+   40% { opacity: 0.4; }
+   60% { opacity: 0.6; }
+   80% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+@keyframes anirot {
+   0% { transform: rotate(0deg); }
+  100% {  transform: rotate(-45deg); }
+}
+
+
+
+/*----------!!!------------ГЛАВНАЯ СТРАНИЦА----------!!!-----------------*/
+
+/*----------------------СТИЛИ---------------------------*/
+
+.main__container{
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.full__container{
+  max-width: 8000px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.main__container_header{
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*----------------------ШАПКА---------------------------*/
+
+.popup {
+  display: none;
+}
+
+.header_content_burger_menu{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.headerandfirstsec_container{
+  background: #F5F5F5;
+}
+
+.full_container_headerandfirstsec_container{
+  background: url(../img/headerandfirstsec_container_leftpart.png) left -10px top 27px no-repeat, url(../img/headerandfirstsec_container_rightpart.png) right 75px top 16px no-repeat;
+}
+
+.header > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) {
+  height: 100%;
+  display: flex;
+}
+
+.header_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 48px;
+  padding-right: 190px;
+}
+
+.header_content_centrepart_list{
+  display: flex;
+  column-gap: 28px;
+  align-items: center;
+}
+
+.header_content_centrepart_list a{
+  font-family: "Montserrat-400";
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #35332b;
+  cursor: pointer;
+}
+
+.header_content_centrepart_list_item:nth-child(2) {
+  margin-right: 4px;
+}
+
+.header_content_rightpart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_content_rightpart_messengers{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+  margin-right: 48px;
+  align-self: end;
+}
+
+.header_content_rightpart_phone{
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 34px;
+  padding-right: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4CBC53;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  font-family: "Montserrat-400";
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header_content_rightpart_phone:hover {
+    background-color: #2a7434;
+    transition: 0.5s;
+}
+
+.firstsec_content h2{
+  font-family: "Montserrat-400";
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: #35332b;
+}
+
+.firstsec_content h1{
+  font-family: "RenaultLife-700";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332B;
+  line-height: 53px;
+  margin-top: 20px;
+}
+
+.firstsec_content_title{
+  margin-top: -26px;
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+  max-width: 946px;
+}
+
+.firstsec_content_title_leftpart{
+  margin-top: 49px;
+  margin-left: 27px;
+}
+
+.firstsec_content_title_leftpart ul > li{
+  font-family: "RenaultLife-400";
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 31px;
+}
+
+.firstsec_content_title_leftpart ul > li > b{
+  font-family: "RenaultLife-700";
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: rgb(76, 188, 83);
+}
+
+.firstsec_content_title_leftpart a{
+  font-family: "Montserrat-500";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #ffffff;
+  background: #4cbc53;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-left: -27px;
+  padding-left: 13px;
+  padding-right: 13px;
+  max-width: 324px;
+  margin-top: 25px;
+}
+
+.firstsec_content_title_leftpart a:hover {
+    background-color: #2a7434;
+    transition: 0.5s;
+}
+
+.firstsec_content_list{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+  max-width: 860px;
+  margin-top: 30px;
+  padding-bottom: 60px;
+}
+
+.firstsec_content_list_item{
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 19px;
+  background: #ffffff;
+  border-radius: 10px;
+  height: 103px;
+  justify-content: space-between;
+}
+
+.firstsec_content_list_item h3{
+  font-family: "RenaultLife-400";
+  font-size: 2.125rem;
+  text-decoration: none;
+  color: #4CBC53;
+  line-height: 37px;
+}
+
+.firstsec_content_list_item_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.firstsec_content_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.firstsec_content_list_item_title{
+  font-family: "Montserrat-400";
+  font-size: 1rem;
+  text-decoration: none;
+  color: #35332b;
+}
+
+.firstsec_content_list_item_header_rightpart{
+  display: flex;
+  column-gap: 4px;
+  margin-top: 5px;
+}
+
+.firstsec_content_list_item:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  background: #35A548;
+}
+
+.firstsec_content_list_item:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  background: #35A548;
+}
+
+.firstsec_content_list_item:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  background: #2A7434;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.franshizasec{
+  margin-top: 129px;
+}
+
+.franshizasec_content_leftpart_header h3{
+   font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+}
+
+.franshizasec_content_leftpart h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 647px;
+  margin-top: 20px;
+}
+
+.franshizasec_content_leftpart h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+.franshizasec_content_leftpart p{
+  margin-top: 167px;
+  font-family: "Montserrat-400";
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 31px;
+  max-width: 660px;
+}
+
+.franshizasec_content_leftpart p > b{
+  color: #4CBC53;
+  font-weight: 700;
+}
+
+.franshizasec_content{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.franshizasec_content_rightpart_list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.franshizasec_content_rightpart_list_item{
+  display: flex;
+  flex-direction: column;
+  max-width: 220px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 19px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  height: 103px;
+  justify-content: space-between;
+}
+
+
+.franshizasec_content_rightpart_list_item h3{
+  font-family: "RenaultLife-400";
+  font-size: 2.125rem;
+  text-decoration: none;
+  color: #4CBC53;
+  line-height: 37px;
+}
+
+.franshizasec_content_rightpart_list_item_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.franshizasec_content_leftpart_header{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.franshizasec_content_rightpart_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.franshizasec_content_rightpart_list_item_title{
+  font-family: "Montserrat-400";
+  font-size: 1rem;
+  text-decoration: none;
+  color: #35332b;
+}
+
+.franshizasec_content_rightpart_list_item_header_rightpart{
+  display: flex;
+  column-gap: 4px;
+  margin-top: 5px;
+}
+
+.franshizasec_content_rightpart_list_item:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  background: #35A548;
+}
+
+.franshizasec_content_rightpart_list_item:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  background: #35A548;
+}
+
+.franshizasec_content_rightpart_list_item:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  background: #2A7434;
+}
+
+
+
+@-webkit-keyframes pulsing {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: #c3f9c7;
+  }
+  100% {
+   background: transparent;
+  }
+}
+
+@keyframes pulsing {
+   0% {
+    background: transparent;
+  }
+  50% {
+    background: #c3f9c7;
+  }
+  100% {
+   background: transparent;
+  }
+}
+
+.circle {
+  background: #c3f9c7;
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
+}
+
+.franshizasec_content_leftpart_point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.analizsec{
+  margin-top: 120px;
+  padding-bottom: 120px;
+}
+
+.analizsec_content_leftpart_header{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.analizsec_content_leftpart_header h3{
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+}
+
+.analizsec_content_leftpart h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.analizsec_content_leftpart h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+.analizsec_content_rightpart_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.analizsec_content_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.analizsec_content_leftpart_point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.analizsec_content_leftpart_graf{
+  margin-top: 44px;
+}
+
+.analizsec_content_leftpart_graf{
+  max-width: 840px;
+  width: 100%;
+  border-radius: 10px;
+  background: #4EB051;
+  padding-top: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.analizsec_content_leftpart_graf p{
+  margin-top: 30px;
+  font-family: "Montserrat-400";
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 21px;
+  max-width: 305px;
+  padding-bottom: 122px;
+}
+
+.analizsec_content_leftpart_graf_grafik{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 860px;
+  width: 100%;
+  height: 85%;
+}
+
+.analizsec_content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.analizsec_content_leftpart{
+  width: 75%;
+}
+
+.analizsec_content_rightpart{
+  padding-top: 72px;
+}
+
+.analizsec_content_rightpart a{
+  font-family: "Montserrat-500";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #4cbc53;
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  max-width: 152px;
+  padding-left: 54px;
+  padding-right: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.analizsec_content_rightpart a:hover {
+  background-color: #2a7434;
+  transition: 0.5s;
+}
+
+.analizsec_content_rightpart_list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-top: 54px;
+}
+
+.analizsec_content_rightpart_list_item{
+  background: #F5F5F5;
+  border-radius: 10px;
+  max-width: 220px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 18px;
+}
+
+.analizsec_content_rightpart_list_item p{
+  font-family: "Montserrat-400";
+  font-size: 1rem;
+  text-decoration: none;
+  color: #35332b;
+  margin-top: 28px;
+}
+
+
+
+
+
+
+
+
+.pribilsec{
+  background: #f5f5f5;
+  padding-top: 80px;
+}
+
+.pribilsec_content_uppart_header{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.pribilsec_content_uppart_header h3{
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+}
+
+.pribilsec_content_uppart h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.pribilsec_content_uppart h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+.pribilsec_content_uppart_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.pribilsec_content_uppart_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.pribilsec_content_uppart_point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pribilsec_content_downpart_list{
+  margin-top: 39px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 20px;
+  column-gap: 40px;
+  padding-bottom: 81px;
+}
+
+.pribilsec_content_downpart_list_item{
+  border-radius: 10px;
+  background: #FFFFFF;
+  max-width: 220px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 101px;
+}
+
+.pribilsec_content_downpart_list_item h3{
+   font-family: "RenaultLife-400";
+  font-size: 2.125rem;
+  text-decoration: none;
+  color: #4cbc53;
+  line-height: 37px;
+}
+
+.pribilsec_content_downpart_list_item p{
+  font-family: "Montserrat-400";
+  font-size: 1rem;
+  text-decoration: none;
+  color: #35332b;
+  margin-top: 26px;
+}
+
+.pribilsec_content_downpart_list_item:nth-child(7) > p:nth-child(2) {
+  color: #FFF;
+}
+
+.pribilsec_content_downpart_list_item:nth-child(7) > h3:nth-child(1) {
+  color: #FFF;
+  font-family: "RenaultLife-700";
+}
+
+.pribilsec_content_downpart_list_item:nth-child(7) {
+  background: #237231;
+}
+
+.pribilsec_content_downpart_list_item:nth-child(8) {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #4cbc53;
+}
+
+.pribilsec_content_downpart_list_item:nth-child(8) a{
+  font-family: "Montserrat-500";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pribilsec_content_downpart_list_item:nth-child(8):hover {
+  background-color: #2a7434;
+  transition: 0.5s;
+}
+
+.pribilsec_content_downpart_list_item:nth-child(5) > p:nth-child(2) {
+  margin-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+.schoolmasterssec{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.schoolmasterssec_content_rightpart_list_item_mobilefix{
+  display: none;
+}
+
+
+.schoolmasterssec_content{
+  position: relative;
+}
+
+.schoolmasterssec_content_uppart_header{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.schoolmasterssec_content_uppart_header h3{
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+}
+
+.schoolmasterssec_content_uppart_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.schoolmasterssec_content_uppart_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.schoolmasterssec_content_uppart_point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schoolmasterssec_content_sticky{
+  position: sticky;
+  top: 100px;
+}
+
+.schoolmasterssec_content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.schoolmasterssec_content_rightpart_list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.schoolmasterssec_content_rightpart_list_item{
+  background: #F5F5F5;
+  border-radius: 10px;
+  max-width: 520px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.schoolmasterssec_content_rightpart_list_item_image{
+  background: url(../img/schoolmasterssec_content_rightpart_list_item_1.png);
+  background-repeat: no-repeat;
+  height: 396px;
+}
+
+.schoolmasterssec_content_rightpart_list_item:nth-child(2) > .schoolmasterssec_content_rightpart_list_item_image{
+  background: url(../img/schoolmasterssec_content_rightpart_list_item_2.png);
+}
+
+.schoolmasterssec_content_rightpart_list_item:nth-child(3) > .schoolmasterssec_content_rightpart_list_item_image{
+  background: url(../img/schoolmasterssec_content_rightpart_list_item_3.png);
+}
+
+.schoolmasterssec_content_rightpart_list_item_image img{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.schoolmasterssec_content_rightpart_list_item p{
+  margin-top: 20px;
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+}
+
+.schoolmasterssec_content_rightpart_list_item p > b{
+  color: rgb(76, 188, 83);
+  font-family: "Montserrat-700";
+}
+
+.schoolmasterssec_content_sticky{
+  margin-top: 30px;
+}
+
+.schoolmasterssec_content_sticky p{
+  margin-top: 30px;
+  font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 550px;
+}
+
+.schoolmasterssec_content_sticky p > b{
+  color: rgb(76, 188, 83);
+}
+
+
+
+
+
+
+
+
+.getpresentationsec_content{
+  background: url(../img/getpresentationsec_background.png);
+  padding-top: 60px;
+  padding-left: 200px;
+  padding-right: 300px;
+  border-radius: 10px;
+  padding-bottom: 55px;
+}
+
+.getpresentationsec_content h3{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  line-height: 53px;
+}
+
+.getpresentationsec_content p{
+  margin-top: 20px;
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 26px;
+}
+
+.getpresentationsec_content a{
+  margin-top: 40px;
+  border-radius: 10px;
+  background-color: #4cbc53;
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 24px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  width: 100%;
+  text-align: center;
+}
+
+.getpresentationsec_content a:hover {
+  background-color: #3f974b;
+  transition: 0.5s;
+}
+
+
+
+
+
+.formatsec{
+  margin-top: 120px;
+  padding-bottom: 120px;
+}
+
+.tabs{
+  
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+  }
+
+  .tabs>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+  }
+
+  /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+  #tab-btn-1:checked~#content-1,
+  #tab-btn-2:checked~#content-2,
+  #tab-btn-3:checked~#content-3 {
+    display: block;
+    margin-top: 53px;
+  }
+
+  .tabs>label {
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+    font-family: "Ubuntu-500";
+    font-size: 1.375rem;
+    color: #383838;
+    line-height: 37px;
+
+    background: transparent;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-width: 303px;
+    width: 100%;
+    border: 1px solid #4CBC53;
+    border-radius: 19px;
+    margin-right: 13px;
+  }
+
+  .tabs>input[type="radio"]:checked+label {
+    background: red;
+    color: #ffffff;
+    animation: anitabs 0.5s linear;
+    font-family: "Ubuntu-500";
+    font-size: 1.375rem;
+    line-height: 37px;
+  }
+
+  .pribilsec_content_downpart_header{
+    display: flex;
+
+  }
+
+  #tab1{
+    background:transparent;
+    border-radius: 10px;
+
+    font-family: "Montserrat-500";
+    font-size: 1rem;
+    text-decoration: none;
+
+  }
+
+   #tab2{
+    background: #4CBC53;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #4cbc53;
+    font-family: "Montserrat-500";
+    font-size: 1rem;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+    #tab1:hover{
+    border-color: #237231;
+    transition: 1s;
+  }
+
+#tab1 {
+  min-width: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  width: 100%;
+  max-height: 17px;
+}
+
+#tab2 {
+  min-width: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  width: 100%;
+  max-height: 17px;
+}
+
+ #tab2:hover{
+    border-color: #237231;
+    transition: 1s;
+  }
+
+.formatsec_content_downpart_header {
+  justify-content: space-between;
+}
+
+.tabs {
+  display: flex;
+  column-gap: 40px;
+}
+
+.formatsec_content_downpart_header_tabs {
+  width: fit-content;
+}
+
+#tab1 {
+  position: absolute;
+ 
+
+   top: 100px;
+  right: 210px;
+  max-width: 156px;
+  max-height: 10px;
+}
+
+#tab2 {
+  min-width: 154px;
+  max-height: 10px;
+  position: absolute;
+   right: 0;
+  top: 100px;
+  max-width: 156px;
+  border: 1px solid #4CBC53;
+  color: #4CBC53;
+  background: transparent;
+}
+
+.tab_noactive{
+  border: 1px solid #4CBC53 !important;
+  color: #4CBC53 !important;
+  background: transparent !important;
+}
+
+.tab_active{
+  border: 1px solid #4CBC53 !important;
+  background: #4CBC53 !important;
+  color: #ffffff !important;
+}
+
+
+.tabs > label {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.formatsec_content_main_rightpart{
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  background: #F5F5F5;
+}
+
+.formatsec_content_main_rightpart h3{
+  font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35a548;
+  line-height: 53px;
+}
+
+.formatsec_content_main{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.formatsec_content_main_rightpart p{
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  margin-top: 20px;
+}
+
+.formatsec_content_main_rightpart_title{
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+  grid-row-gap: 15px;
+}
+
+.formatsec_content_main_rightpart_title h4{
+   font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #a8a7a1;
+  line-height: 26px;
+}
+
+.formatsec_content_main_rightpart_title p{
+  font-family: "RenaultLife-400";
+  font-size: 2.125rem;
+  text-decoration: none;
+  color: #4cbc53;
+  line-height: 37px;
+  margin-top: 0;
+  justify-self: end;
+}
+
+#content-2 > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+  max-width: 560px;
+  border-radius: 10px;
+}
+
+#content-1 > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+  max-width: 560px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.opensec_content{
+  background: url(../img/opensec_background.png);
+  padding-top: 60px;
+  padding-left: 200px;
+  padding-right: 300px;
+  border-radius: 10px;
+  padding-bottom: 55px;
+}
+
+.opensec_content h3{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332B;
+  line-height: 53px;
+}
+
+.opensec_content p{
+  margin-top: 20px;
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332B;
+  line-height: 26px;
+}
+
+.opensec_content a{
+  margin-top: 40px;
+  border-radius: 10px;
+  background-color: #4cbc53;
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 24px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 179px;
+  width: 100%;
+  text-align: center;
+}
+
+.opensec_content a:hover {
+  background-color: #3f974b;
+  transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+.preferencessec{
+  padding-top: 80px;
+  background: #F5F5F5;
+  margin-top: 120px;
+  padding-bottom: 80px;
+}
+
+.preferencessec_content_uppart_header{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.preferencessec_content_uppart_header h3{
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+}
+
+.preferencessec_content_uppart h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.preferencessec_content_uppart h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+.preferencessec_content_uppart_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.preferencessec_content_uppart_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.preferencessec_content_uppart_point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preferencessec_content_downpart_header h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.preferencessec_content_downpart_header h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+
+
+
+
+.preferencessec_content_list{
+  display: flex;
+  flex-direction: column;
+  margin-top: 62px;
+  row-gap: 20px;
+}
+
+.preferencessec_content_list_uppart{
+  display: flex;
+  column-gap: 40px;
+}
+
+.preferencessec_content_list_uppart_item{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 220px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  height: 234px;
+}
+
+.preferencessec_content_list_uppart_item h3{
+  font-family: "RenaultLife-400";
+  font-size: 2.125rem;
+  text-decoration: none;
+  color: #4CBC53;
+  line-height: 37px;
+}
+.preferencessec_content_list_uppart_item p{
+  font-family: "Montserrat-400";
+  font-size: 1rem;
+  text-decoration: none;
+  color: #35332b;
+}
+
+.preferencessec_content_list_uppart_item:nth-child(3) {
+  max-width: 520px;
+  background-image: url(../img/preferencessec_content_list_uppart_item_image.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.preferencessec_content_list_uppart_item:nth-child(3) > p:nth-child(2) {
+  max-width: 291px;
+}
+
+
+
+
+.preferencessec_content_list_centrepart{
+  display: flex;
+  column-gap: 40px;
+}
+
+.preferencessec_content_list_centrepart_item{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 520px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  height: 234px;
+}
+
+.preferencessec_content_list_centrepart_item h3{
+  font-family: "RenaultLife-400";
+  font-size: 2.125rem;
+  text-decoration: none;
+  color: #4CBC53;
+  line-height: 37px;
+}
+.preferencessec_content_list_centrepart_item p{
+  font-family: "Montserrat-400";
+  font-size: 1rem;
+  text-decoration: none;
+  color: #35332b;
+}
+
+.preferencessec_content_list_centrepart_item:nth-child(1) > p:nth-child(2) {
+  padding-left: 300px;
+}
+
+.preferencessec_content_list_centrepart_item:nth-child(1) > h3:nth-child(1) {
+  padding-left: 300px;
+}
+
+.preferencessec_content_list_centrepart_item:nth-child(1) {
+  background-image: url(../img/preferencessec_content_list_centrepart_item_1.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.preferencessec_content_list_centrepart_item:nth-child(2) {
+  background-image: url(../img/preferencessec_content_list_centrepart_item_2.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.preferencessec_content_list_downpart{
+  display: flex;
+  column-gap: 40px;
+}
+
+.preferencessec_content_list_downpart_item{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 220px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  height: 234px;
+}
+
+.preferencessec_content_list_downpart_item h3{
+  font-family: "RenaultLife-400";
+  font-size: 2.125rem;
+  text-decoration: none;
+  color: #4CBC53;
+  line-height: 37px;
+}
+.preferencessec_content_list_downpart_item p{
+  font-family: "Montserrat-400";
+  font-size: 1rem;
+  text-decoration: none;
+  color: #35332b;
+}
+
+.preferencessec_content_list_downpart_item:nth-child(3){
+  background-image: url(../img/preferencessec_content_list_downpart_item_1.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  max-width: 520px;
+}
+
+.preferencessec_content_list_downpart_item:nth-child(3) > p:nth-child(2) {
+  max-width: 280px;
+}
+
+
+
+
+
+
+
+
+
+.faststartsec{
+  margin-top: 120px;
+}
+
+.faststartsec_content_uppart_header{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.faststartsec_content_uppart_header h3{
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+}
+
+.faststartsec_content_uppart h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.faststartsec_content_uppart h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+.faststartsec_content_uppart_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.faststartsec_content_uppart_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.faststartsec_content_uppart_point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faststartsec_content_downpart_header h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.faststartsec_content_downpart_header h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+.faststartsec_content_downpart_header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.faststartsec_content_downpart_header a{
+  font-family: "Montserrat-500";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #4cbc53;
+  width: 100%;
+  padding-top: 23px;
+  padding-left: 33px;
+  padding-right: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 21px;
+  max-width: 194px;
+}
+
+.faststartsec_content_downpart_header a:hover {
+  background-color: #2a7434;
+  transition: 0.5s;
+}
+
+
+.faststartsec_content_list{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 40px;
+  row-gap: 40px; 
+}
+
+.faststartsec_content_list_item{
+  border-radius: 10px;
+  background: #F5F5F5;
+  max-width: 220px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 101px;
+}
+
+.faststartsec_content_list_item h3{
+   font-family: "RenaultLife-400";
+  font-size: 2.125rem;
+  text-decoration: none;
+  color: #4cbc53;
+  line-height: 37px;
+}
+
+.faststartsec_content_list_item p{
+  font-family: "Montserrat-400";
+  font-size: 1rem;
+  text-decoration: none;
+  color: #35332b;
+  margin-top: 26px;
+}
+
+.faststartsec_content_list_item:nth-child(2) > img:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+  width: 35px;
+}
+
+.faststartsec_content_list_item:nth-child(2){
+  background: url(../img/faststartsec_content_list_item_background.png);
+}
+
+.faststartsec_content_list_item:nth-child(7) > img:nth-child(1) {
+  width: 35px;
+}
+
+.faststartsec_content_list_item:nth-child(7){
+  background: url(../img/faststartsec_content_list_item_background_2.png);
+}
+
+
+.faststartsec_content_list_item:nth-child(8){
+  background: #2A7434;
+}
+
+
+.faststartsec_content_list_item:nth-child(8) {
+  position: relative;
+}
+
+.faststartsec_content_list_item:nth-child(8) > img:nth-child(3) {
+  position: absolute;
+  top: -1px;
+  right: 0;
+}
+
+
+.faststartsec_content_list_item:nth-child(8) > h3:nth-child(1) {
+  color: #FFFFFF;
+}
+
+.faststartsec_content_list_item:nth-child(8) > p:nth-child(2) {
+  color: #FFFFFF;
+}
+
+
+
+
+
+.questionssec{
+  margin-top: 120px;
+
+}
+
+.questionssec_content_uppart_header{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.questionssec_content_uppart_header h3{
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+}
+
+.questionssec_content_uppart h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.questionssec_content_uppart h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+.questionssec_content_uppart_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.questionssec_content_uppart_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.questionssec_content_uppart_point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.questionssec_content_downpart_header h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.questionssec_content_downpart_header h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+.questions-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.questionssec_dopartpage h3{
+  font-family: "BebasNeueBold-700";
+  font-size: 3.75rem;
+  color: #5B4D4F;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.questions-list{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.questions-list-item{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background: #F5F5F5;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+.plus{
+  width: 24px !important;
+  height: 24px !important;
+  padding: 16px;
+  border-radius: 50%;
+}
+
+.questions-list-item p:nth-child(2){
+  font-family: "Montserrat-400";
+  font-size: 1rem;
+  text-decoration: none;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.questions-list-item p:nth-child(1){
+   font-family: "Montserrat-500";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  width: 860px;
+}
+
+.questions-list-item-wrapinfo{
+  margin-top: 20px;
+  max-width: 745px;
+
+}
+
+.questions-list-item-wrapinfo p{
+   font-family: "Montserrat-400" !important;
+  font-size: 1rem !important;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+}
+
+.questions-list-item-wrapinfo-dopinfo{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #84C3E0;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  max-width: 204px;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.questions-list-item-title{
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+
+}
+
+.questions-list-item-title-header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.questions-list-item-wrapinfo_js{
+  display: flex !important;
+  flex-direction: column;
+  animation: anifade 1s forwards;
+}
+
+.questions-list-item-btnwrap-imgnoactive_js{
+  display: none !important;
+}
+
+.questions-list-item-btnwrap-imgactive_js{
+  display: block !important;
+
+}
+
+.questions-list-item-wrapinfo{
+  display: none;
+
+}
+
+.questions-list-item-btnwrap{
+  border: 0px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.questions-list-item-btnwrap-imgactive{
+  display: none;
+}
+
+.questions-list-item-btnwrap-imgnoactive{
+  display: block;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus{
+  display: flex !important;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: #4CBC53;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 40px;
+  height: 32px;
+}
+
+.questions-list-item_js > div:nth-child(1) > div:nth-child(1) > button:nth-child(2) > div:nth-child(1) {
+  display: none !important;
+}
+
+.questions-list-item_js > div:nth-child(1) > div:nth-child(1) > button:nth-child(2) > div:nth-child(2) {
+  display: flex !important;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.questions-list-item-title_image_js{
+  width: 660px;
+  height: 245px;
+  animation: anitwo 0.5s linear;
+}
+
+.questions-list-item > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.questions-list-item-wrapinfo_js p{
+   font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+  max-width: 860px;
+}
+
+.plus_act{
+   transform: rotate(45deg); 
+   background: #4CBC53;
+   padding: 4px;
+   animation: anirot 0.2s linear;
+}
+
+.plus {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.plus_act {
+  padding: 8px;
+}
+
+.questions-list-item > div:nth-child(1) > div:nth-child(2) > button:nth-child(1) > div:nth-child(1) {
+  padding-top: 0px;
+}
+
+
+
+
+
+
+
+.supportsec{
+  padding-top: 80px;
+  background: #F5F5F5;
+  margin-top: 120px;
+  padding-bottom: 80px;
+}
+
+.supportsec_content_uppart_header{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.supportsec_content_uppart_header h3{
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+}
+
+.supportsec_content_uppart h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.supportsec_content_uppart h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+.supportsec_content_uppart_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.supportsec_content_uppart_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.supportsec_content_uppart_point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.supportsec_content_downpart_header h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.supportsec_content_downpart_header h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+.supportsec_content p{
+  max-width: 499px;
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: rgb(53, 51, 43);
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+.supportsec_content_main{
+  display: flex;
+  justify-content: space-between;
+}
+
+.supportsec_content_main > img:nth-child(2) {
+  margin-top: -30px;
+}
+
+
+
+
+
+
+
+
+
+.creatorsec{
+  margin-top: 120px;
+}
+
+.creatorsec_content_uppart_header{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.creatorsec_content_uppart_header h3{
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+}
+
+.creatorsec_content_uppart h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.creatorsec_content_uppart h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+.creatorsec_content_uppart_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.creatorsec_content_uppart_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.creatorsec_content_uppart_point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creatorsec_content_downpart_header h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.creatorsec_content_main_leftpart p{
+  margin-top: 62px;
+  max-width: 534px;
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: rgb(53, 51, 43);
+  line-height: 26px;
+}
+
+.creatorsec_content_main_leftpart b{
+  margin-top: 26px;
+  max-width: 534px;
+  font-family: "Montserrat-700";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #4CBC53;
+  line-height: 26px;
+  display: flex;
+}
+
+.creatorsec_content_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.creatorsec_content_main_rightpart > img:nth-child(2) {
+  margin-top: -30px;
+}
+
+.creatorsec_content_main_rightpart{
+  position: relative;
+}
+
+.creatorsec_content_main_rightpart > img:nth-child(1) {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+
+.creatorsec_content_main_rightpart > p {
+  position: absolute;
+  top: 58px;
+  left: 38px;
+  font-family: "RenaultLife-400";
+  font-size: 1rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.firstnaremontsec{
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+
+.firstnaremontsec_content_leftpart{
+  background: #2A7434;
+  border-radius: 10px;
+  max-width: 660px;
+  width: 100%;
+  padding-top: 61px;
+  padding-left: 40px;
+  padding-bottom: 60px;
+  position: relative;
+  background: #2A7434;
+}
+
+.firstnaremontsec_content_leftpart img{
+  right: 0;
+  top: -1px;
+  position: absolute;
+}
+
+.firstnaremontsec_content_uppart_header{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.firstnaremontsec_content_uppart_header h3{
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 26px;
+}
+
+.firstnaremontsec_content_uppart h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.firstnaremontsec_content_uppart h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+.firstnaremontsec_content_uppart_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.firstnaremontsec_content_uppart_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.firstnaremontsec_content_uppart_point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstnaremontsec_content_downpart_header h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  line-height: 53px;
+  max-width: 420px;
+  margin-top: 20px;
+}
+
+.firstnaremontsec_content_leftpart p{
+  margin-top: 73px;
+  color: rgb(255, 255, 255);
+   font-family: "Montserrat-400";
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 16px;
+}
+
+.firstnaremontsec_content{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.firstnaremontsec_content_rightpart_form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.firstnaremontsec_content_rightpart{
+  width: 100%;
+  max-width: 460px;
+}
+
+.firstnaremontsec_content_rightpart_form input{
+  border-radius: 10px;
+  outline: none;
+  background: #F5F5F5;
+  border: 0px;
+  padding-top: 23px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-bottom: 23px;
+  font-family: "Montserrat-500";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #888888;
+  line-height: 16px;
+}
+
+.firstnaremontsec_content_rightpart_form button{
+  border-radius: 10px;
+  outline: none;
+  border: 0px;
+  background: #4CBC53;
+  outline: none;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat-500";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+
+.firstnaremontsec_content_rightpart_form button:hover {
+  background-color: #2a7434;
+  transition: 0.5s;
+}
+
+
+
+
+
+footer{
+  padding-top: 60px;
+  background: #F5F5F5;
+  position: relative;
+  padding-bottom: 33px;
+}
+
+.footer_content_uppart_header{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  margin-bottom: 51px;
+}
+
+.footer_content_uppart_header h3{
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 26px;
+}
+
+.footer_content_uppart h2{
+   font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-top: 20px;
+}
+
+.footer_content_uppart h2 > b{
+  color: #4CBC53;
+  font-weight: 400;
+}
+
+.footer_content_uppart_list_item_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.footer_content_uppart_header_point{
+  border-radius: 50%;
+  background: #4CBC53;
+  width: 8px;
+  height: 8px;
+}
+
+.footer_content_uppart_point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_content_rightpart_messengers{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+  margin-right: 48px;
+  align-self: end;
+}
+
+.footer_content{
+  display: flex;
+  column-gap: 60px;
+  justify-content: flex-start;
+}
+
+.footer_content_item{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_content_item a{
+  font-family: "Montserrat-400";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: rgb(53, 51, 43);
+  line-height: 26px;
+  margin-bottom: 18px;
+}
+
+.footer_content_leftpart_logo {
+  margin-bottom: 31px !important; 
+}
+
+.header_content_rightpart_messengers {
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.footer_content_item p{
+  font-family: "Montserrat-400";
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #cbcbcb;
+  line-height: 26px;
+  margin-bottom: 18px;
+}
+
+
+.header_content_rightpart_messengers:nth-child(4) > a:nth-child(1) {
+  margin-bottom: 0;
+}
+
+.header_content_rightpart_messengers:nth-child(4) > a:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.footer_content_item:nth-child(2) > a:nth-child(2) {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-radius: 10px;
+  background: #4CBC53;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 39px;
+  padding-right: 39px;
+}
+
+.footer_content_item:nth-child(2) > a:nth-child(2):hover {
+  background-color: #2a7434;
+  transition: 0.5s;
+}
+
+.footer_image{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.footer_content_item:nth-child(1) > p:nth-child(5) {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+.header_wrap{
+  display: none;
+}
+
+.visible{
+  position: fixed;
+  display: flex;
+  background: #f5f5f5;
+}
+
+.visible {
+  width: 100%;
+  top: 0;
+  z-index: 10000000;
+}
+
+.header_content_wrap {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.header_content_rightpart_messengers-wrap {
+  margin-right: 20px;
+}
+
+.header_content_wrap {
+  padding-right: 0;
+}
+
+.header > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > a:hover {
+  color: #b2b2b2;
+  transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.franchaizisec{
+  margin-top: 120px;
+}
+
+.franchaizisec_content h2{
+  font-family: "RenaultLife-400";
+  font-size: 3rem;
+  text-decoration: none;
+  color: #35332b;
+  line-height: 53px;
+  max-width: 660px;
+  margin-bottom: 34px;
+}
+
+.franchaizisec_content_main_slider > a:nth-child(1) > img:nth-child(1) {
+  max-width: 560px;
+}
+
+.franchaizisec_content_main_slider_nav a > img{
+ max-width: 60px;
+}
+
+.franchaizisec_content_main{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.franchaizisec_content_main_title h3{
+   font-family: "RenaultLife-700";
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.franchaizisec_content_main_title p{
+  font-family: "RenaultLife-400";
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 25px;
+  line-height: 1.55;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  margin: 0 auto;
+  max-width: 700px;
+  max-height: 100vh;
+  background-color: white;
+}
+
+.featured-item {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* Useful Classes */
+.xy-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.transition {
+  transition: all 350ms ease-in-out;
+}
+
+.r-3-2 {
+  width: 100%;
+  padding-bottom: 66.667%;
+  background-color: #ddd;
+}
+
+.image-holder {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Main Styles */
+.gallery-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery {
+  position: relative;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.item-wrapper {
+  cursor: pointer;
+  width: 60px;
+height: 60px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+.controls {
+  font-size: 0;
+  border-top: none;
+}
+.move-btn {
+  display: inline-block;
+  width: 50%;
+  border: none;
+  color: #ccc;
+  background-color: transparent;
+  padding: 0.2em 1.5em;
+}
+.move-btn:first-child {border-right: none;}
+.move-btn.left  { cursor: w-resize; }
+.move-btn.right { cursor: e-resize; }
+
+
+.r-3-2 {
+  max-width: 560px;
+}
+
+.franchaizisec_content_main_gallery {
+  max-width: 560px;
+}
+
+.active {
+  margin: 0;
+}
+
+.featured-item {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+
+}
+
+.controls {
+display: none;
+}
+
+.item-wrapper > figure:nth-child(1) {
+  margin: 0;
+}
+
+.gallery {
+  white-space: wrap;
+}
+
+.r-3-2 {
+  width: 100%;
+}
+
+.franchaizisec_content_main_gallery {
+  width: 100%;
+}
+
+.featured-item:nth-child(1) {
+  width: 560px;
+  height: 47px;
+}
+
+.gallery-item {
+  width: 60px;
+   height: 20px;
+}
+
+.featured-item:nth-child(1) {
+  height: 420px;
+}
+
+.r-3-2 {
+  padding-bottom: 0;
+}
+
+.gallery-item {
+  height: 60px;
+}
